@@ -4,6 +4,10 @@ Leverages the Watson Visual Recognition service with image pre-processing techni
 
 The user drags & drops an image onto the applicaiton within the browser, and the image is uploaded to the Node.js application.  Once uploaded, the image is "chopped up" into smaller images (tiles) and each individual tile is analyzed by the Watson Visual Recognition service.  Once complete, all results are visualized within the browser in a heatmap-like visualization, where colorization is based on the confidence scores being returned by the Visual Recognition service's custom classifier.
 
+### Image feed
+![alt text](https://github.com/ashleydp/2park-IBM/blob/master/public/img/original.png)
+
+### Available spaces identified
 ![alt text](https://github.com/ashleydp/2park-IBM/blob/master/public/img/parking.png)
 
 ### Build status
