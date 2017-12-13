@@ -1,6 +1,6 @@
 # 2Park@IBM
 
-The *Visual-Recognition-Tile-Localization* application leverages the Watson Visual Recognition service with image pre-processing techniques to deliver localized image classification.  For example, "show me where there is rust on the bridge".
+The leverages the Watson Visual Recognition service with image pre-processing techniques to deliver localized image classification.  For example, "show me where there is rust on the bridge".
 
 You can view a demonstration of this application in action in the video here:
 
@@ -30,7 +30,8 @@ The user drags & drops an image onto the applicaiton within the browser, and the
 4. cd into the app directory
 5. Run `npm install` to install the app's dependencies
 6. Run `npm start` to start the app
-7. Access the running app in a browser at http://localhost:6001
+7. brew install imagemagick
+8. Access the running app in a browser at http://localhost:6001
 
 ### Run on IBM Bluemix
 
