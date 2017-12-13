@@ -1,4 +1,4 @@
-# Visual-Recognition-Tile-Localization
+# 2Park@IBM
 
 The *Visual-Recognition-Tile-Localization* application leverages the Watson Visual Recognition service with image pre-processing techniques to deliver localized image classification.  For example, "show me where there is rust on the bridge".
 
