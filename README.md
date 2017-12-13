@@ -24,7 +24,7 @@ The user drags & drops an image onto the applicaiton within the browser, and the
 4. cd into the app directory
 5. Run `npm install` to install the app's dependencies
 6. Run `npm start` to start the app
-7. brew install imagemagick
+7. Run `brew install imagemagick` to install imagemagick
 8. Access the running app in a browser at http://localhost:6001
 
 ### Run on IBM Bluemix
