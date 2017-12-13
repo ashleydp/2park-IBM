@@ -110,7 +110,7 @@ function renderResult(dataStr) {
             $("#render-parent").removeClass("hidden");
             $("#footerControls").removeClass("hidden");
             $("#content").addClass("hidden");
-            $("#render-parent-outcome").removeClass("hidden");
+
 
 
             var targetScale = $("#render-parent").width() / result.imageWidth

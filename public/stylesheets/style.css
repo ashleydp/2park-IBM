@@ -93,11 +93,3 @@ table tr td {
     text-align: center;
     font-size: 25px;
 }
-
-#render-parent-outcome {
-    position: relative;
-    top: 480px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-}
