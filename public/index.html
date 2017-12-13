@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,56 +24,62 @@
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
     <script src="./scripts/client.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <div id="content" style="background-color: #006d5d;">
-      <div class="dropContainer">
-        <form action="/file-upload" class="dropzone" id="uploader" enctype="multipart/form-data" style="padding: 2em;">
+        <div class="dropContainer">
+            <form action="/file-upload" class="dropzone" id="uploader" enctype="multipart/form-data" style="padding: 2em;">
 
-          <!-- Bruna's placeholder here -->
-          <div class="dz-message" data-dz-message>
-            <img style="width: 120px;" src="img/logo.png" />
-            <div style="padding: 4em 2em; text-align: center;">
-              <div style="color: #e4e4e4; font-family: IBM Plex Sans; font-size: x-large; font-weight: bold; padding-bottom: 1.5em;">
-                Discover parking spots near you
-              </div>
-              <div style="color: #e4e4e4; font-family: Menlo; font-size: small; padding-top: 6em;">
-                < Drop a file here >
-              </div>
-              <div style="color: #e4e4e4; font-family: Menlo; font-size: small; padding-top: 2.5em;">
-                —
-              </div>
-              <div style="color: #e4e4e4; font-family: Menlo; font-size: small; padding-top: 2.5em;">
-                (Imagine that we're in the future and this is a live feed from a real parking lot)
-              </div>
-            </div>
-          </div>
+                <!-- Bruna's placeholder here -->
+                <div class="dz-message" data-dz-message>
+                    <img style="width: 120px;" src="img/logo.png" />
+                    <div style="padding: 4em 2em; text-align: center;">
+                        <div style="color: #e4e4e4; font-family: IBM Plex Sans; font-size: x-large; font-weight: bold; padding-bottom: 1.5em;">
+                            Discover parking spots near you
+                        </div>
+                        <div style="color: #e4e4e4; font-family: Menlo; font-size: small; padding-top: 6em;">
+                            < Drop a file here>
+                        </div>
+                        <div style="color: #e4e4e4; font-family: Menlo; font-size: small; padding-top: 2.5em;">
+                            —
+                        </div>
+                        <div style="color: #e4e4e4; font-family: Menlo; font-size: small; padding-top: 2.5em;">
+                            (Imagine that we're in the future and this is a live feed from a real parking lot)
+                        </div>
+                    </div>
+                </div>
 
-          <input name="tileWidth" value="64" type="hidden" step="1" />
-          <input name="tileHeight" value="64" type="hidden" step="1" />
+                <input name="tileWidth" value="64" type="hidden" step="1" />
+                <input name="tileHeight" value="64" type="hidden" step="1" />
 
-          <div class="fallback">
-            <input name="file" type="file" />
-            <input type="submit" value="Upload" />
-          </div>
+                <div class="fallback">
+                    <input name="file" type="file" />
+                    <input type="submit" value="Upload" />
+                </div>
 
-        </form>
-      </div>
-      <div id="feedback"></div>
+            </form>
+        </div>
+        <div id="feedback"></div>
     </div>
 
     <div id="render-parent" class="hidden" style="background-color: #006d5d;">
-      <img style="width: 120px;" src="img/logo.png" />
-      <div id="render" style="text-align: center;"></div>
+        <img style="width: 120px;" src="img/logo.png" />
+        <div id="render" style="text-align: center;"></div>
+    </div>
+
+    <div id="render-parent-outcome" class="hidden" style="background-color: #006d5d;">
+        <div id="render-outcome" style="color: #e4e4e4; font-family: IBM Plex Sans; font-size: x-large; font-weight: bold; padding-bottom: 1.5em; text-align: center;"></div>
     </div>
 
     <div>
     </div>
 
     <div id="footerControls" class="hidden">
-      <input id="scaleSlider" data-slider-min="0.2" data-slider-max="2" data-slider-step="0.01" data-slider-value="1" style="display: none;"/>
-      <input id="overlayToggle" type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-offstyle="danger" data-on="" data-off="" style="padding-left: 4em;">
+        <input id="scaleSlider" data-slider-min="0.2" data-slider-max="2" data-slider-step="0.01" data-slider-value="1" style="display: none;" />
+        <input id="overlayToggle" type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-offstyle="danger" data-on="" data-off="" style="padding-left: 4em;">
     </div>
-  </body>
+</body>
+
 </html>

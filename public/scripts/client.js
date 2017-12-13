@@ -43,6 +43,9 @@ io.on('update', function(data) {
 
 io.on("processingComplete", function(data) {
     console.log("processing complete");
+    setTimeout(function() {
+        $('#render-outcome').html("Spaces Available: " + emptySpaces);
+    }, 500);
     renderResult(data);
 });
 
@@ -86,9 +89,11 @@ function renderResult(dataStr) {
         //console.log(data)
 
     var renderContainer = $("#render");
+    var renderOutcome = $("#render-outcome");
+
 
     renderContainer.append($("<img class='' src='" + data.imagePath + "'  />"));
-    //renderContainer.append($("<div>" + emptySpaces + "</div>"));
+    renderOutcome.append($("<div>Spaces Available: " + emptySpaces + "</div>"));
 
     $.ajax({
             type: 'GET',
@@ -105,6 +110,7 @@ function renderResult(dataStr) {
             $("#render-parent").removeClass("hidden");
             $("#footerControls").removeClass("hidden");
             $("#content").addClass("hidden");
+            $("#render-parent-outcome").removeClass("hidden");
 
 
             var targetScale = $("#render-parent").width() / result.imageWidth
@@ -177,10 +183,12 @@ function getConfidence(cellData) {
                 var classification = classifier.classes[0];
 
                 if (classification.score > 0.4) {
-                  //console.log(counter + 1);
-                  emptySpaces++;
+                    //console.log(counter + 1);
+                    emptySpaces++;
+
                 } else {
-                  fullSpaces++;
+                    fullSpaces++;
+
                 }
 
                 console.log("full: " + fullSpaces);
